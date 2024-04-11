@@ -102,7 +102,7 @@ class ItemForm extends Component {
 
         let form = (
             <div className='textColor'>
-                <h4 style={{ textAlign: "center", margin: "5px" }}>Create Item As You Need :</h4>
+                <h4 style={{ textAlign: "center", margin: "5px" }}>Create Room As You Need :</h4>
                 <div className='m-2 p-2 fgColor' style={{ minWidth: "350px", border: "1px solid gray" }}>
                     <form style={{ padding: "5px" }}>
                         <input name='title' className='form-control' value={this.state.values.title} placeholder='Title' onChange={(e) => this.inputChangerHandler(e)} />
