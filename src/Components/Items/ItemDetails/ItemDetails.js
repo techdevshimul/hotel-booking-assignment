@@ -226,7 +226,7 @@ class ItemDetails extends Component {
                 } else {
                     sellOrOutOfStockOrLogin = (
                         <div>
-                            <p className='bg-danger p-2 text-white' style={{ fontWeight: 'bold', fontSize: "25px", display: 'inline', border: "1px solid gray", borderRadius: "5px" }}>Out Of Stock!</p>
+                            <p className='bg-danger p-2 text-white' style={{ fontWeight: 'bold', fontSize: "25px", display: 'inline', border: "1px solid gray", borderRadius: "5px" }}>Out Of Rooms!</p>
                             <br />
                             <br />
                             <Link to={itemsUrl}>
