@@ -275,10 +275,10 @@ export const checkOut = (order, token, selectedItem) => dispatch => {
                         dispatch(checkoutFailed(err.message));
                         setTimeout(() => dispatch(checkoutSuccess(null)), 3000);
                         setTimeout(() => dispatch(checkoutFailed(null)), 3000);
-                        console.log("Something Went Wrong! Order Again!");
+                        console.log("Something Went Wrong! Book Again!");
                     });
             } else {
-                console.log("Something Went Wrong! Order Again!");
+                console.log("Something Went Wrong! Book Again!");
             }
         })
         .catch(err => {
@@ -287,7 +287,7 @@ export const checkOut = (order, token, selectedItem) => dispatch => {
             dispatch(checkoutFailed(err.message));
             setTimeout(() => dispatch(checkoutSuccess(null)), 3000);
             setTimeout(() => dispatch(checkoutFailed(null)), 3000);
-            console.log("Something Went Wrong! Order Again!");
+            console.log("Something Went Wrong! Book Again!");
         });
 }
 
