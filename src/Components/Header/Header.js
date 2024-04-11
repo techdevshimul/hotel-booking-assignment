@@ -71,7 +71,7 @@ const Header = props => {
             <Navbar color="dark" dark expand="sm" style={{ textAlign: "center" }}>
                 <NavbarToggler onClick={navToggle} />
                 <NavbarBrand href="/">
-                    Hotel Booking
+                    Hotel Booking App
                 </NavbarBrand>
 
                 <Collapse isOpen={isNavOpen} navbar>

@@ -183,7 +183,7 @@ class CheckOutForm extends Component {
 
         if (this.props.selectedItem == null || this.props.orderData == null) {
             return (
-                <div><LinkError errText={"Item"} /></div>
+                <div><LinkError errText={"Room"} /></div>
             )
         } else {
             if (this.props.checkoutLoading) {

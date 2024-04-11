@@ -47,7 +47,7 @@ class CategoryItems extends Component {
         const currentUrl = window.location.href;
         const urlParts = currentUrl.split('/');
         const lastPart = urlParts[urlParts.length - 1];
-        const startIndex = urlParts.indexOf('items') + 1;
+        const startIndex = urlParts.indexOf('rooms') + 1;
         const endIndex = urlParts.indexOf('checkout');
         const middlePart = urlParts.slice(startIndex, endIndex).join('/');
         this.setState({ middlePartOfUrl: middlePart });
@@ -76,7 +76,7 @@ class CategoryItems extends Component {
                 if (categoryItem === null) {
                     loadItems = (
                         <div>
-                            <FetchErrors errText="Sorry! This Category Is Empty. Use Below Links To Browse Items, Categories Or Reload/Refresh After Sometime!" />
+                            <FetchErrors errText="Sorry! This Category Is Empty. Use Below Links To Browse Rooms, Categories Or Reload/Refresh After Sometime!" />
                         </div>
                     )
                 }

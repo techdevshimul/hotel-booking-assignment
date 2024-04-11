@@ -4,7 +4,7 @@ import { Button, Modal, ModalBody } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Spinner from '../../Spinner/Spinner';
-import { baseUrl, categoriesUrl, extensionFormat } from '../../../Redux/dataBase';
+import { baseUrl, categoriesUrl, extensionFormat, itemsUrl, ordersUrl } from '../../../Redux/dataBase';
 
 const mapStateToProps = state => {
     return {
@@ -107,13 +107,13 @@ class CategoryForm extends Component {
                     <ModalBody>
                         <p style={{ textAlign: 'center' }}>{this.state.modalMsg}</p>
                         <div className='d-flex justify-content-center mr-auto flex-wrap'>
-                            <Link to="/orders">
-                                <Button color='secondary' className='m-1' >Orders</Button>
+                            <Link to={ordersUrl}>
+                                <Button color='secondary' className='m-1' >Bookings</Button>
                             </Link>
-                            <Link to="/items">
-                                <Button color='secondary' className='m-1' >Items</Button>
+                            <Link to={itemsUrl}>
+                                <Button color='secondary' className='m-1' >Rooms</Button>
                             </Link>
-                            <Link to="/categories">
+                            <Link to={categoriesUrl}>
                                 <Button color='secondary' className='m-1' >Categories</Button>
                             </Link>
                             <Button color='secondary' className='m-1' onClick={this.closeModal}>Close</Button>

@@ -126,7 +126,7 @@ class ItemDetails extends Component {
         const currentUrl = window.location.href;
         const urlParts = currentUrl.split('/');
         const lastPart = urlParts[urlParts.length - 1];
-        const startIndex = urlParts.indexOf('items') + 1;
+        const startIndex = urlParts.indexOf('rooms') + 1;
         const endIndex = urlParts.indexOf('checkout');
         const middlePart = urlParts.slice(startIndex, endIndex).join('/');
         this.setState({ middlePartOfUrl: middlePart });
@@ -171,8 +171,6 @@ class ItemDetails extends Component {
                     }
                 }
             }
-
-
         }
         else {
             this.setSelectedItem();
@@ -191,7 +189,7 @@ class ItemDetails extends Component {
         if (this.props.itemLoading === false) {
             if (this.props.selectedItem == null) {
                 return (
-                    <LinkError errText="Item" />
+                    <LinkError errText="Room" />
                 )
             } else {
 
@@ -210,16 +208,16 @@ class ItemDetails extends Component {
                                 <Link to={itemsUrl + "/" + this.props.selectedItem.id + checkoutUrl}>
                                     <Button color='success mt-2 ms-2' style={{ width: "170px" }} onClick={this.submitHandler}>Book Now</Button>
                                 </Link>
-                                <Button color='secondary' className='ms-2 mt-2' style={{ width: "170px" }} onClick={this.goBack}> Go Back</Button>
+                                <Button color='secondary' className='ms-2 mt-2' style={{ width: "170px" }} onClick={this.goBack}>Go Back</Button>
                             </div>
                         );
                     } else {
                         sellOrOutOfStockOrLogin = (
                             <div>
                                 <Link to="/login">
-                                    <Button className='ms-2 mt-2' style={{ width: "170px" }} color="danger">Login To Buy</Button>
+                                    <Button className='ms-2 mt-2' style={{ width: "170px" }} color="danger">Login To Book</Button>
                                 </Link>
-                                <Button color='secondary' className='ms-2 mt-2' style={{ width: "170px" }} onClick={this.goBack}> Go Back</Button>
+                                <Button color='secondary' className='ms-2 mt-2' style={{ width: "170px" }} onClick={this.goBack}>Go Back</Button>
                             </div>
                         )
                     }
@@ -231,7 +229,7 @@ class ItemDetails extends Component {
                             <br />
                             <br />
                             <Link to={itemsUrl}>
-                                <Button color='success' className='ms-2 mt-2' style={{ width: "170px" }} >Browse Other Items</Button>
+                                <Button color='success' className='ms-2 mt-2' style={{ width: "170px" }} >Browse Other Rooms</Button>
                             </Link>
                             <Button color='secondary' className='ms-2 mt-2' style={{ width: "170px" }} onClick={this.goBack}>Back</Button>
                         </div>
@@ -263,14 +261,14 @@ class ItemDetails extends Component {
                                         <span style={{ fontWeight: 'bold' }}>Details : </span>{this.props.selectedItem.details}
                                     </p>
                                     <p>
-                                        <span className='me-2'><span style={{ fontWeight: 'bold' }}>Stock : </span>{this.props.selectedItem.remainAmount}</span>
-                                        <span><span style={{ fontWeight: 'bold' }}>Sold : </span>{this.props.selectedItem.totalAmount - this.props.selectedItem.remainAmount}</span>
+                                        <span className='me-2'><span style={{ fontWeight: 'bold' }}>Left : </span>{this.props.selectedItem.remainAmount}</span>
+                                        <span><span style={{ fontWeight: 'bold' }}>Booked : </span>{this.props.selectedItem.totalAmount - this.props.selectedItem.remainAmount}</span>
                                     </p>
                                     <p>
                                         <span style={{ fontWeight: 'bold' }}>Price : </span>{this.props.selectedItem.price} <span style={{ fontSize: "22px" }}>&#2547;</span> X {this.state.orderData.quantity} = <span style={{ fontWeight: "bold" }}>{this.state.orderData.totalPayable}</span> <span style={{ fontSize: "22px" }}>&#2547;</span>
                                     </p>
                                     <p>
-                                        <span style={{ fontWeight: 'bold' }}>Last Sold : </span> {dateFormat(this.props.selectedItem.updatedTime, "dS mmmm yyyy, h:MM TT")}
+                                        <span style={{ fontWeight: 'bold' }}>Last Booked : </span> {dateFormat(this.props.selectedItem.updatedTime, "dS mmmm yyyy, h:MM TT")}
                                     </p>
 
                                     {sellOrOutOfStockOrLogin}

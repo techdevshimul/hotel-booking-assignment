@@ -17,7 +17,7 @@ const mapStateToProps = state => {
 class ItemForm extends Component {
     state = {
         values: {
-            categoryName: "Blue",
+            categoryName: "",
             title: "",
             image: "",
             desc: "",
@@ -57,7 +57,7 @@ class ItemForm extends Component {
                         this.setState({
                             isLoading: false,
                             isModalOpen: true,
-                            modalMsg: "Item Created Successfully!",
+                            modalMsg: "Room Created Successfully!",
                             values: {
                                 categoryName: "",
                                 title: "",
@@ -127,7 +127,7 @@ class ItemForm extends Component {
                         </textarea>
                         <br />
                         <br />
-                        <Button color='success' className='me-auto' onClick={this.submitHandler}>Submit Item</Button>
+                        <Button color='success' className='me-auto' onClick={this.submitHandler}>Submit Room</Button>
                         <Link to="/">
                             <Button color='secondary' className='ms-1'>Cancel</Button>
                         </Link>
@@ -144,10 +144,10 @@ class ItemForm extends Component {
                         <p style={{ textAlign: 'center' }}>{this.state.modalMsg}</p>
                         <div className='d-flex justify-content-center mr-auto flex-wrap'>
                             <Link to={ordersUrl}>
-                                <Button color='secondary' className='m-1' >Orders</Button>
+                                <Button color='secondary' className='m-1' >Bookings</Button>
                             </Link>
                             <Link to={itemsUrl}>
-                                <Button color='secondary' className='m-1' >Items</Button>
+                                <Button color='secondary' className='m-1' >Rooms</Button>
                             </Link>
                             <Link to={categoriesUrl}>
                                 <Button color='secondary' className='m-1' >Categories</Button>

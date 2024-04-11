@@ -16,7 +16,7 @@ const LinkError = ({ errText }) => {
             }}>
                 <h4>You Haven't Selected Any {errText} Or Visited An Invalid Link. Use Below Links To Browse Rooms Or Categories! </h4>
                 <Link to={itemsUrl}>
-                    <Button color="success" style={{ width: "120px", margin: "5px" }}>Items</Button>
+                    <Button color="success" style={{ width: "120px", margin: "5px" }}>Rooms</Button>
                 </Link>
                 <Link to={categoriesUrl}>
                     <Button color="success" style={{ width: "120px" }}>Categories</Button>

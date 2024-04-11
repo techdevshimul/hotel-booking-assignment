@@ -31,9 +31,9 @@ class Categories extends Component {
         document.title = "Categories - Hotel Booking App";
         let categories = null;
         if (this.props.categoryErr) {
-            categories = <FetchErrors errText="Sorry! Failed To Load Categories. Use Below Links To Browse Items, Categories Or Reload/Refresh After Sometime!" />
+            categories = <FetchErrors errText="Sorry! Failed To Load Categories. Use Below Links To Browse Rooms, Categories Or Reload/Refresh After Sometime!" />
         } else if (this.props.categories.length === 0) {
-            categories = <FetchErrors errText="Sorry! Failed To Load Categories. Use Below Links To Browse Items, Categories Or Reload/Refresh After Sometime!" />
+            categories = <FetchErrors errText="Sorry! Failed To Load Categories. Use Below Links To Browse Rooms, Categories Or Reload/Refresh After Sometime!" />
         } else {
             categories = this.props.categories.map(category => {
                 return <Category category={category} key={category.id} />;

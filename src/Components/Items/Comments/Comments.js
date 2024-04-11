@@ -29,7 +29,7 @@ class Comments extends Component {
 
         if (loadComment.length === 0) {
             loadComment = (
-                <div><p style={{ fontWeight: "bold", padding: "5px" }}>Be The First One To Comment On This Item.</p></div>
+                <div><p style={{ fontWeight: "bold", padding: "5px" }}>Be The First One To Comment On This Room.</p></div>
             )
         }
 
