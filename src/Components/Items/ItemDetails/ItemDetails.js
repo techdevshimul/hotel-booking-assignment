@@ -163,12 +163,13 @@ class ItemDetails extends Component {
                     if (this.state.orderData.quantity > 1) {
                         document.getElementById("decreaseButton").classList.remove("disabled");
                     }
-                    if (this.state.orderData.quantity === this.props.selectedItem.remainAmount) {
+                    if (this.state.orderData.quantity == this.props.selectedItem.remainAmount) {
                         document.getElementById("increaseButton").classList.add("disabled");
                     }
                     if (this.state.orderData.quantity < this.props.selectedItem.remainAmount) {
                         document.getElementById("increaseButton").classList.remove("disabled");
                     }
+                    console.log(this.props.selectedItem.remainAmount, this.state.orderData.quantity)
                 }
             }
         }
