@@ -35,7 +35,7 @@ class Item extends Component {
             </div>);
         } else if (item.remainAmount <= 5) {
             stock = (<div>
-                <p style={{ fontWeight: "bold", color: "orangered" }}>Low On Rooms! Only {item.remainAmount} Rooms Left!</p>
+                <p style={{ fontWeight: "bold", color: "orangered" }}>Low On Rooms! Only {item.remainAmount} Left!</p>
             </div>);
         } else {
             stock = (
