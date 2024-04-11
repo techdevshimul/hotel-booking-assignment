@@ -31,16 +31,16 @@ class Item extends Component {
 
         if (item.remainAmount === 0) {
             stock = (<div>
-                <p style={{ fontWeight: "bold" }} className='text-danger'>Out Of Stock!</p>
+                <p style={{ fontWeight: "bold" }} className='text-danger'>Out Of Rooms!</p>
             </div>);
         } else if (item.remainAmount <= 5) {
             stock = (<div>
-                <p style={{ fontWeight: "bold", color: "orangered" }}>Low On Stock! Only {item.remainAmount} Rooms Left!</p>
+                <p style={{ fontWeight: "bold", color: "orangered" }}>Low On Rooms! Only {item.remainAmount} Rooms Left!</p>
             </div>);
         } else {
             stock = (
                 (<div>
-                    <p style={{ fontWeight: "bold" }} className='text-success'>Stock Available!</p>
+                    <p style={{ fontWeight: "bold" }} className='text-success'>Rooms Available!</p>
                 </div>)
             );
         }
