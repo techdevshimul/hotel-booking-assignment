@@ -264,7 +264,7 @@ export const checkOut = (order, token, selectedItem) => dispatch => {
                         dispatch(fetchItems());
                         dispatch(fetchOrders());
                         dispatch(checkoutLoading(false));
-                        dispatch(checkoutSuccess("Booking Placed And Item Has Been Updated. Redirecting To Homepage!"));
+                        dispatch(checkoutSuccess("Booking Placed And Room Has Been Updated. Redirecting To Homepage!"));
                         setTimeout(() => dispatch(checkoutSuccess(null)), 3000);
                         setTimeout(() => dispatch(checkoutFailed(null)), 3000);
                         setTimeout(() => window.location.reload(false), 3000);

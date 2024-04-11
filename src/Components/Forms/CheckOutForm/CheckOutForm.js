@@ -207,7 +207,7 @@ class CheckOutForm extends Component {
                                     <p><span style={{ fontWeight: 'bold' }}>Details : </span>{this.props.selectedItem.details}</p>
                                     <p><span style={{ fontWeight: 'bold' }}>Quantity : </span> <span className='text-success' style={{ fontWeight: "bold" }}> {this.props.orderData.quantity} </span></p>
                                     <p><span style={{ fontWeight: 'bold' }}>Total Price : </span> <span className='text-success' style={{ fontWeight: "bold" }}> {this.props.orderData.totalPayable} </span> <span style={{ fontSize: "22px" }}>&#2547;</span></p>
-                                    <p className="bg-warning" style={{ fontWeight: "bold", textAlign: "center", padding: "5px", border: "1px solid gray", borderRadius: "5px" }}>Before Placing Order, Please Recheck The Quantity And Total Price!</p>
+                                    <p className="bg-warning" style={{ fontWeight: "bold", textAlign: "center", padding: "5px", border: "1px solid gray", borderRadius: "5px" }}>Before Booking, Please Recheck The Quantity And Total Price!</p>
                                 </div >
                                 <div className='m-2 p-2' style={{ borderRadius: "5px", maxWidth: "350px", minWidth: "350px", border: "1px solid gray" }}>
 
