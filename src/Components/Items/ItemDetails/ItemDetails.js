@@ -195,7 +195,7 @@ class ItemDetails extends Component {
                 )
             } else {
 
-                document.title = this.props.selectedItem.title + " - React Assignment";
+                document.title = this.props.selectedItem.title + " - Hotel Booking App";
                 if (this.props.selectedItem.remainAmount !== 0) {
                     if (this.props.token != null) {
                         sellOrOutOfStockOrLogin = (
@@ -208,7 +208,7 @@ class ItemDetails extends Component {
                                 </div>
                                 <br />
                                 <Link to={itemsUrl + "/" + this.props.selectedItem.id + checkoutUrl}>
-                                    <Button color='success mt-2 ms-2' style={{ width: "170px" }} onClick={this.submitHandler}>Buy Now</Button>
+                                    <Button color='success mt-2 ms-2' style={{ width: "170px" }} onClick={this.submitHandler}>Book Now</Button>
                                 </Link>
                                 <Button color='secondary' className='ms-2 mt-2' style={{ width: "170px" }} onClick={this.goBack}> Go Back</Button>
                             </div>

@@ -27,7 +27,7 @@ class Home extends Component {
         }
     }
     render() {
-        document.title = "Home - React Assignment";
+        document.title = "Home - Hotel Booking App";
 
         return (
             <div >
@@ -35,13 +35,14 @@ class Home extends Component {
                     <div className='p-2 m-2' style={{ backgroundColor: "white", textAlign: "center", borderRadius: "10px" }}>
                         <div>
                             <div style={{ width: "100%", marginBottom: "10px" }}>
-                                <img className="img-fluid" alt="Home" src="https://images.pexels.com/photos/132474/pexels-photo-132474.jpeg" style={{ aspectRatio: "16/9", objectFit: 'cover', width: "100%", height: "300px", borderRadius: "10px" }} />
+                                <img className="img-fluid" alt="Home" src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg" style={{ aspectRatio: "16/9", objectFit: 'cover', width: "100%", height: "300px", borderRadius: "10px" }} />
                             </div>
-                            <h1>The Great Ever Flowers Gallary</h1>
-                            <p style={{ fontSize: "20px", color: "grey" }}>Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.
+                            <h1>Find your next stay</h1>
+                            <p style={{ fontSize: "20px", color: "grey" }}>Set in Western Georgia, Paragraph Resort & Spa Shekvetili, Autograph Collection offers 5-star accommodations with an outdoor pool, kids' club, sports facilities and a fitness center. The hotel features a 430 m3 aquarium with a diverse selection of fish species. There is also a spa, an indoor pool and saunas.
+
                             </p>
                             <Link to={itemsUrl}>
-                                <Button color="primary" className='m-2'>Browse Items</Button>
+                                <Button color="primary" className='m-2'>Browse Rooms</Button>
                             </Link>
                             <Link to={categoriesUrl}>
                                 <Button color="secondary" className='m-2'>Browse Categories</Button>
@@ -50,65 +51,59 @@ class Home extends Component {
                     </div>
                     <div className='p-2 m-2' style={{ backgroundColor: "white", textAlign: "center", borderRadius: "10px" }}>
                         <div style={{ margin: "25px 5px 25px 5px" }} >
-                            <h2>Why Flowers Are Important In Our Life?</h2>
+                            <h2>Why We Are The Best?</h2>
                             <p style={{ fontSize: "18px", color: "grey" }}>
-                                The importance of flowers is everywhere. From nature to human use, they are important. They can feed insects, birds, animals and humans. Further, they provide natural medicines for humans and some animals. Most importantly, without flowers, plants would simply be green, and the world would be a duller place.
+                                We have a wide range of hotel deals and promotions throughout the year, all of which can be found on our deals page. If you're a member of our Genius loyalty program, you can also sign in to your account to see discounted rates at select hotels and other properties.
                             </p>
                             <div className='d-flex justify-content-center flex-wrap'>
-                                <img style={{ aspectRatio: "16/9", objectFit: 'cover', width: "300px", height: "200px", borderRadius: "5px", margin: "5px" }} alt="Sample" src="https://images.pexels.com/photos/68507/spring-flowers-flowers-collage-floral-68507.jpeg" />
+                                <img style={{ aspectRatio: "16/9", objectFit: 'cover', width: "300px", height: "200px", borderRadius: "5px", margin: "5px" }} alt="Sample" src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg" />
 
-                                <img style={{ aspectRatio: "16/9", objectFit: 'cover', width: "300px", height: "200px", borderRadius: "5px", margin: "5px" }} alt="Sample" src="https://images.pexels.com/photos/46216/sunflower-flowers-bright-yellow-46216.jpeg" />
+                                <img style={{ aspectRatio: "16/9", objectFit: 'cover', width: "300px", height: "200px", borderRadius: "5px", margin: "5px" }} alt="Sample" src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg" />
 
-                                <img style={{ aspectRatio: "16/9", objectFit: 'cover', width: "300px", height: "200px", borderRadius: "5px", margin: "5px" }} alt="Sample" src="https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg" />
+                                <img style={{ aspectRatio: "16/9", objectFit: 'cover', width: "300px", height: "200px", borderRadius: "5px", margin: "5px" }} alt="Sample" src="https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg" />
                             </div>
                         </div>
                     </div>
                     <div className='p-2 m-2' style={{ backgroundColor: "white", textAlign: "center", borderRadius: "10px" }}>
                         <div style={{ margin: "25px 5px 25px 5px" }} >
-                            <h2>How Do Flowers Help Humans?</h2>
+                            <h2>Why Should You Trust Us?</h2>
                             <p style={{ fontSize: "18px", color: "grey" }}>
-                                Flowers increase levels of positive energy in humans. Moreover, they also help us feel relaxed and secure. Similarly, they add beauty to our environment and reduce stress levels at our home or workplace by making us feel happy.
+                                You can trust Hotel.com hotel reviews because guests can only leave a review after they stay at a hotel. This way you get verified reviews written by real Hotel.com guests.
+
+
                             </p>
                             <div className='d-flex justify-content-center flex-wrap'>
-                                <img style={{ aspectRatio: "16/9", objectFit: 'cover', width: "300px", height: "200px", borderRadius: "5px", margin: "5px" }} alt="Sample" src="https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg" />
+                                <img style={{ aspectRatio: "16/9", objectFit: 'cover', width: "300px", height: "200px", borderRadius: "5px", margin: "5px" }} alt="Sample" src="https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg" />
 
-                                <img style={{ aspectRatio: "16/9", objectFit: 'cover', width: "300px", height: "200px", borderRadius: "5px", margin: "5px" }} alt="Sample" src="https://images.pexels.com/photos/1477166/pexels-photo-1477166.jpeg" />
+                                <img style={{ aspectRatio: "16/9", objectFit: 'cover', width: "300px", height: "200px", borderRadius: "5px", margin: "5px" }} alt="Sample" src="https://images.pexels.com/photos/161758/governor-s-mansion-montgomery-alabama-grand-staircase-161758.jpeg" />
 
-                                <img style={{ aspectRatio: "16/9", objectFit: 'cover', width: "300px", height: "200px", borderRadius: "5px", margin: "5px" }} alt="Sample" src="https://images.pexels.com/photos/462402/pexels-photo-462402.jpeg" />
+                                <img style={{ aspectRatio: "16/9", objectFit: 'cover', width: "300px", height: "200px", borderRadius: "5px", margin: "5px" }} alt="Sample" src="https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg" />
                             </div>
                         </div>
                     </div>
                     <div className='p-2 m-2' style={{ backgroundColor: "white", borderRadius: "10px", textAlign: "left" }}>
                         <div style={{ margin: "25px 5px 25px 5px" }} >
-                            <h3>About Flowers : </h3>
+                            <h3>About Hotel : </h3>
                             <p style={{ fontSize: "18px", color: "grey" }}>
-                                There are many things in nature for which we should be thankful. One of them definitely has to be flowers. There are many types of flowers which we see in our environment. The beautiful fragrances and flowers enhance the beauty of our planet earth. Through flowers essay, we will look at what these beautiful things do and how much joy they bring.
+                                A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided inside a hotel room may range from a modest-quality mattress in a small room to large suites with bigger, higher-quality beds, a dresser, a refrigerator, and other kitchen facilities, upholstered chairs, a flat-screen television, and en-suite bathrooms.
                             </p>
-                            <h4>Importance Of Flowers : </h4>
+                            <h4>History : </h4>
                             <p style={{ fontSize: "18px", color: "grey" }}>
-                                Flowers carry a lot of importance in our lives. In India, no worship of God is complete without some kind of flower. Devotees make a garland of flowers to dedicate it to God. In addition, we also use flowers for special occasions like weddings. <br /> <br />
+                                Facilities offering hospitality to travellers featured in early civilizations. In Greco-Roman culture and in ancient Persia, hospitals for recuperation and rest were built at thermal baths. Guinness World Records officially recognised Japan's Nishiyama Onsen Keiunkan, founded in 705, as the oldest hotel in the world. During the Middle Ages, various religious orders at monasteries and abbeys would offer accommodation for travellers on the road.<br /><br />
 
-                                The bride and groom wear garlands of flowers to signify their marriage. In addition, flowers smell so good that we use it in different places by planting them in our garden. This way, the beauty of our place enhances. <br /> <br />
-
-                                Flowers carry importance in each nook and corner of the world. They also come in use for making medicines. Similarly, we also make difference in fragrance perfumes from the flowers. Further, the butterflies, birds and bees take the flowers as food. <br /> <br />
-
-                                In many weddings, the bride carries a bouquet of flowers when she walks down the aisle. Thus, it is very symbolic in that sense. On special occasions of valentines and anniversary, we gift our partners’ beautiful flowers as a symbol of our love. <br /> <br />
-
-                                Similarly, we send flowers for someone who is sick to brighten their day. We also send flowers as a token of condolence during funerals. Thus, we see they have so many uses in so many areas.
+                                The precursor to the modern hotel was the inn of medieval Europe, possibly dating back to the rule of Ancient Rome. These would provide for the needs of travellers, including food[2] and lodging, stabling and fodder for the traveller's horses and fresh horses for mail coaches. Famous London examples of inns include the George and the Tabard. A typical layout of an inn featured an inner court with bedrooms on the two sides, with the kitchen and parlour at the front and the stables at the back.
                             </p>
-                            <h4>My Favourite Flower : </h4>
+                            <h4>Resort hotels : </h4>
                             <p style={{ fontSize: "18px", color: "grey" }}>
-                                My favourite flower is rose. I like other flowers too but I find the rose to be the most beautiful among all flowers. It is also called the king of flowers. They come in many colours so it offers great variety.<br /><br />
+                                Some hotels are built specifically as a destination in itself to create a captive trade, example at casinos, amusement parks and holiday resorts. Though hotels have always been built in popular destinations, the defining characteristic of a resort hotel is that it exists purely to serve another attraction, the two having the same owners.<br /><br />
 
-                                For instance, they are available in red, pink, white, yellow, blue and more. My favourite is the white rose. Even though the rose has small and sharp thorns on its stem, people love picking roses.<br /><br />
+                                On the Las Vegas Strip there is a tradition of one-upmanship with luxurious and extravagant hotels in a concentrated area. This trend now has extended to other resorts worldwide, but the concentration in Las Vegas is still the world's highest: nineteen of the world's twenty-five largest hotels by room count are on the Strip, with a total of over 67,000 rooms.
 
-                                It looks beautiful when it blooms in the garden or is kept at the florist’s shop. Often we see the rose as a symbol of beauty and love. The rose has soft petals and a very sweet fragrance. It comes in use in many ceremonies for decorations purposes.<br /><br />
 
-                                Moreover, garlands of roses are used in places of worship. Similarly, it is a great flower which always stands out from the rest of the flowers. I have planted roses in my garden as well with the help of my grandfather.
                             </p>
                             <h4>Conclusion : </h4>
                             <p style={{ fontSize: "18px", color: "grey" }}>
-                                Therefore, flowers are an essential part of our lives. They are responsible for bringing happiness in our lives and making our surrounding environment a prettier place to live in. Thus, we must all plant flowers at homes and in our neighbourhood to beautify the place and bring happiness and joy for everyone passing by.
+                                In 2006, Guinness World Records listed the First World Hotel in Genting Highlands, Malaysia, as the world's largest hotel with a total of 6,118 rooms (and which has now expanded to 7,351 rooms).[37] The Izmailovo Hotel in Moscow has the most beds, with 7,500, followed by The Venetian and The Palazzo complex in Las Vegas (7,117 rooms) and MGM Grand Las Vegas complex (6,852 rooms).[self-published source?]
                             </p>
                         </div>
                     </div>

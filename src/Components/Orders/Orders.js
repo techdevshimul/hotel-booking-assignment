@@ -30,13 +30,13 @@ class Orders extends Component {
     }
 
     render() {
-        document.title = "Orders - React Assignment";
+        document.title = "Bookings - Hotel Booking App";
 
         let orders = null;
         if (this.props.orderErr) {
-            orders = <FetchErrors errText="Sorry! Failed To Load Orders. Use Below Links To Browse Items, Categories Or Reload/Refresh After Sometime!" />
+            orders = <FetchErrors errText="Sorry! Failed To Load Bookings. Use Below Links To Browse Rooms, Categories Or Reload/Refresh After Sometime!" />
         } else if (this.props.orders.length === 0) {
-            orders = <FetchErrors errText="Sorry! Failed To Load Orders Or You Haven't Order Anything. Use Below Links To Browse Items, Categories Or Reload/Refresh After Sometime!" />
+            orders = <FetchErrors errText="Sorry! Failed To Load Bookings Or You Haven't Order Anything. Use Below Links To Browse Rooms, Categories Or Reload/Refresh After Sometime!" />
         } else {
             orders = this.props.orders.map(order => {
                 return <Order order={order} key={order.id} />
@@ -45,7 +45,7 @@ class Orders extends Component {
 
         return (
             <div>
-                <h4 style={{ textAlign: "center", margin: "5px" }}>Your Orders :</h4>
+                <h4 style={{ textAlign: "center", margin: "5px" }}>Your Bookings :</h4>
                 <div className="d-flex justify-content-center mr-auto flex-wrap">
                     {this.props.orderLoading ? <Spinner /> : orders}
                 </div>

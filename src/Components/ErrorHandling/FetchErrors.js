@@ -4,7 +4,6 @@ import { Button } from 'reactstrap'
 import { categoriesUrl, itemsUrl } from '../../Redux/dataBase'
 
 const FetchErrors = ({ errText }) => {
-    document.title = "Errors - React Assignment";
     return (
         <div className='col-12' style={{
             minHeight: "580px",
@@ -20,7 +19,7 @@ const FetchErrors = ({ errText }) => {
             }}>
                 <h5 style={{ color: "#A34343" }}>{errText}</h5>
                 <Link to={itemsUrl}>
-                    <Button color="success" style={{ width: "150px", margin: "5px" }}>Items</Button>
+                    <Button color="success" style={{ width: "150px", margin: "5px" }}>Rooms</Button>
                 </Link>
                 <Link to={categoriesUrl}>
                     <Button color="success" style={{ width: "150px", margin: "5px" }}>Categories</Button>

@@ -30,13 +30,13 @@ class Items extends Component {
 
     render() {
 
-        document.title = "Items - React Assignment";
+        document.title = "Rooms - Hotel Booking App";
 
         let items = null;
         if (this.props.itemErr) {
-            items = <FetchErrors errText="Sorry! Failed To Load Items. Use Below Links To Browse Items, Categories Or Reload/Refresh After Sometime!" />
+            items = <FetchErrors errText="Sorry! Failed To Load Rooms. Use Below Links To Browse Rooms, Categories Or Reload/Refresh After Sometime!" />
         } else if (this.props.items.length === 0) {
-            items = <FetchErrors errText="Sorry! Failed To Load Items. Use Below Links To Browse Items, Categories Or Reload/Refresh After Sometime!" />
+            items = <FetchErrors errText="Sorry! Failed To Load Rooms. Use Below Links To Browse Rooms, Categories Or Reload/Refresh After Sometime!" />
         } else {
             items = this.props.items.map(item => {
                 return <Item item={item} key={item.id} />;
@@ -45,7 +45,7 @@ class Items extends Component {
 
         return (
             <div>
-                <h4 style={{ textAlign: "center", margin: "5px" }}>All Items :</h4>
+                <h4 style={{ textAlign: "center", margin: "5px" }}>All Rooms :</h4>
                 <div className="d-flex justify-content-center mr-auto flex-wrap" >
                     {this.props.itemLoading ? <Spinner /> : items}
                 </div>

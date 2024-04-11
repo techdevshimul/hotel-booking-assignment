@@ -4,7 +4,6 @@ import { Button } from 'reactstrap'
 import { categoriesUrl, itemsUrl } from '../../Redux/dataBase'
 
 const LinkError = ({ errText }) => {
-    document.title = "Errors - React Assignment";
     return (
         <div style={{ minHeight: "580px" }}>
             <div className='col-12 bgColor fgColor' style={{
@@ -15,7 +14,7 @@ const LinkError = ({ errText }) => {
                 margin: "10px 0px",
                 textAlign: "center",
             }}>
-                <h4>You Haven't Selected Any {errText} Or Visited An Invalid Link. Use Below Links To Browse Items Or Categories! </h4>
+                <h4>You Haven't Selected Any {errText} Or Visited An Invalid Link. Use Below Links To Browse Rooms Or Categories! </h4>
                 <Link to={itemsUrl}>
                     <Button color="success" style={{ width: "120px", margin: "5px" }}>Items</Button>
                 </Link>

@@ -89,7 +89,7 @@ class CheckOutForm extends Component {
 
     render() {
 
-        document.title = "Checkout - React Assignment";
+        document.title = "Checkout - Hotel Booking App";
 
         let checkout = null;
         let msg = null;
@@ -174,7 +174,7 @@ class CheckOutForm extends Component {
                             <option value="Bkash">Bkash</option>
                         </select>
                         <br />
-                        <Button style={{ width: "150px" }} type='submit' className='btn btn-success'>Place Order</Button>
+                        <Button style={{ width: "150px" }} type='submit' className='btn btn-success'>Place Booking</Button>
                         <Button style={{ width: "155px" }} type='button' onClick={this.goBack} color='secondary' className='ms-1'>Go Back</Button>
                     </form>
                 </div>
@@ -195,7 +195,7 @@ class CheckOutForm extends Component {
                             {msg}
                         </div>
 
-                        <h4 style={{ textAlign: "center", margin: "5px" }}>Item Is Ready To Place Order :</h4>
+                        <h4 style={{ textAlign: "center", margin: "5px" }}>Room Is Ready To Place Booking :</h4>
                         <div style={{ maxWidth: "1300px" }} className='d-flex justify-content-center'>
                             <div className='fgColor m-2 d-flex justify-content-center mr-auto flex-wrap' style={{ border: "1px solid gray" }}>
                                 <div className='m-2 d-flex align-items-center'>

@@ -19,7 +19,7 @@ const Header = props => {
 
     let links = null;
     let userIdMatched = null;
-    let verifiedUser = "1mAPG3rWxKWilkdiPrgPffAmYAl2";
+    let verifiedUser = "3RIT1nCJVChhBUtX4keG0TAujpB3";
 
     if (verifiedUser === props.userId) {
         userIdMatched = (
@@ -35,7 +35,7 @@ const Header = props => {
                 <Link to="/" className="nav-link">Home</Link>
             </NavItem>
             <NavItem>
-                <Link to={itemsUrl} className="nav-link">Items</Link>
+                <Link to={itemsUrl} className="nav-link">Rooms</Link>
             </NavItem>
             <NavItem>
                 <Link to={categoriesUrl} className="nav-link">Categories</Link>
@@ -51,14 +51,14 @@ const Header = props => {
                     <Link to="/" className="nav-link">Home</Link>
                 </NavItem>
                 <NavItem>
-                    <Link to={itemsUrl} className="nav-link">Items</Link>
+                    <Link to={itemsUrl} className="nav-link">Rooms</Link>
                 </NavItem>
                 {userIdMatched}
                 <NavItem>
                     <Link to={categoriesUrl} className="nav-link">Categories</Link>
                 </NavItem>
                 <NavItem>
-                    <Link to={ordersUrl} className="nav-link">Orders</Link>
+                    <Link to={ordersUrl} className="nav-link">Bookings</Link>
                 </NavItem>
                 <NavItem>
                     <Link to={logoutUrl} className="nav-link">Logout</Link>
@@ -71,7 +71,7 @@ const Header = props => {
             <Navbar color="dark" dark expand="sm" style={{ textAlign: "center" }}>
                 <NavbarToggler onClick={navToggle} />
                 <NavbarBrand href="/">
-                    React Assignments
+                    Hotel Booking
                 </NavbarBrand>
 
                 <Collapse isOpen={isNavOpen} navbar>

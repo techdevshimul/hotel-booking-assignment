@@ -158,7 +158,7 @@ export const auth = (email, password, mode) => dispatch => {
         authUrl = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=";
     }
 
-    const API_KEY = "AIzaSyAX73ADh6G0j60KS4mDimCKGE9LkqnCNbE";
+    const API_KEY = "AIzaSyBEKxZittWtx3PPIhoTdKg4k_RabMOZ3XA";
     axios.post(authUrl + API_KEY, authData)
         .then(response => {
             dispatch(authLoading(false));
@@ -264,7 +264,7 @@ export const checkOut = (order, token, selectedItem) => dispatch => {
                         dispatch(fetchItems());
                         dispatch(fetchOrders());
                         dispatch(checkoutLoading(false));
-                        dispatch(checkoutSuccess("Order Placed And Item Has Been Updated. Redirecting To Homepage!"));
+                        dispatch(checkoutSuccess("Booking Placed And Item Has Been Updated. Redirecting To Homepage!"));
                         setTimeout(() => dispatch(checkoutSuccess(null)), 3000);
                         setTimeout(() => dispatch(checkoutFailed(null)), 3000);
                         setTimeout(() => window.location.reload(false), 3000);

@@ -10,7 +10,7 @@ const Order = ({ order }) => {
                         <img className='img-fluid' style={{ borderRadius: "5px", maxWidth: "350px", height: "100%", aspectRatio: "16/9", objectFit: 'cover' }} src={order.item.image} alt='Item' />
                     </div>
                     <div className='m-2 p-2 b' style={{ borderRadius: "5px", maxWidth: "350px", minWidth: "350px", border: "1px solid gray" }}>
-                        <h5><span style={{ fontWeight: 'bold' }}>Item Details :</span></h5>
+                        <h5><span style={{ fontWeight: 'bold' }}>Room Details :</span></h5>
                         <p><span style={{ fontWeight: 'bold' }}>ID : </span>{order.item.id}</p>
                         <p><span style={{ fontWeight: 'bold' }}>Title : </span>{order.item.title}</p>
                         <p><span style={{ fontWeight: 'bold' }}>Details : </span>{order.item.details}</p>
@@ -19,12 +19,12 @@ const Order = ({ order }) => {
                     </div>
 
                     <div className='m-2 p-2' style={{ borderRadius: "5px", maxWidth: "350px", minWidth: "350px", border: "1px solid gray" }}>
-                        <h5><span style={{ fontWeight: 'bold' }}>Order Details :</span></h5>
+                        <h5><span style={{ fontWeight: 'bold' }}>Booking Details :</span></h5>
                         <p><span style={{ fontWeight: 'bold' }}>ID : </span>{order.id}</p>
                         <p><span style={{ fontWeight: 'bold' }}>Address : </span>{order.customer.deliveryAddress}</p>
                         <p><span style={{ fontWeight: 'bold' }}>Phone : </span>{order.customer.phone}</p>
                         <p><span style={{ fontWeight: 'bold' }}>Payment Type : </span>{order.customer.paymentType}</p>
-                        <p><span style={{ fontWeight: 'bold' }}>Order Time : </span>{dateFormat(order.orderTime, "dS mmmm yyyy, h:MM TT")}</p>
+                        <p><span style={{ fontWeight: 'bold' }}>Book Time : </span>{dateFormat(order.orderTime, "dS mmmm yyyy, h:MM TT")}</p>
                     </div>
                 </div>
             </div>

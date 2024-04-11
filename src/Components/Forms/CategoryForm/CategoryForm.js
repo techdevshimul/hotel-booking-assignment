@@ -75,7 +75,7 @@ class CategoryForm extends Component {
     }
 
     render() {
-        document.title = "Category Form - React Assignment";
+        document.title = "Category Form - Hotel Booking App";
         let form = (
             <div className='textColor'>
                 <h4 style={{ textAlign: "center", margin: "5px" }}>Create Category As You Need :</h4>
