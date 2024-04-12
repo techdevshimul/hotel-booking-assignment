@@ -230,7 +230,7 @@ class ItemDetails extends Component {
                             <br />
                             <br />
                             <Link to={itemsUrl}>
-                                <Button color='success' className='ms-2 mt-2' style={{ width: "170px" }} >Browse Other Rooms</Button>
+                                <Button color='success' className='ms-2 mt-2' style={{ width: "180px" }} >Browse Other Rooms</Button>
                             </Link>
                             <Button color='secondary' className='ms-2 mt-2' style={{ width: "170px" }} onClick={this.goBack}>Back</Button>
                         </div>
