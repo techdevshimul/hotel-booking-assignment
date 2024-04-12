@@ -23,9 +23,6 @@ const INITIAL_STATE = {
         totalPayable: 1
     },
 
-    purchaseable: false,
-    onClickCheckout: false,
-
     token: null,
     userId: null,
     authLoading: false,
